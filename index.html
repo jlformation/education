@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -19,7 +25,7 @@
             </svg>
         </button>
         <!-- navigation -->
-        <nav>
+        <nav class="">
             <button>x</button>
             <ul>
                 <li><a href="#">Accueil</a></li>
@@ -32,9 +38,13 @@
     <main>
         <!-- section Hero -->
         <section class="hero">
-            <h1>Qui a dit que l’école était ennuyeuse ?</h1>
-            <p>On joue et on apprend</p>
-            <img src="images/download1.png" alt="écolier">
+            <div>
+                <div>
+                    <h1>Qui a dit que l'école était ennuyeuse ?</h1>
+                    <p>On joue et on apprend</p>
+                </div>
+                <img src="images/download1.png" alt="écolier">
+            </div>
             <ul>
                 <li>
                     <a href="#">
@@ -42,7 +52,8 @@
                             <path
                                 d="M21.17 2.06A13 13 0 0 0 19 1.87a12.94 12.94 0 0 0-7 2.05a12.94 12.94 0 0 0-7-2a13 13 0 0 0-2.17.19a1 1 0 0 0-.83 1v12a1 1 0 0 0 1.17 1a10.9 10.9 0 0 1 8.25 1.91l.12.07h.11a.9.9 0 0 0 .7 0h.11l.12-.07A10.9 10.9 0 0 1 20.83 16A1 1 0 0 0 22 15V3a1 1 0 0 0-.83-.94M11 15.35a12.9 12.9 0 0 0-6-1.48H4v-10a9 9 0 0 1 1 0a10.86 10.86 0 0 1 6 1.8Zm9-1.44h-1a12.9 12.9 0 0 0-6 1.48V5.67a10.86 10.86 0 0 1 6-1.8a9 9 0 0 1 1 0Zm1.17 4.15a13 13 0 0 0-2.17-.19a12.94 12.94 0 0 0-7 2.05a12.94 12.94 0 0 0-7-2.05a13 13 0 0 0-2.17.19A1 1 0 0 0 2 19.21a1 1 0 0 0 1.17.79a10.9 10.9 0 0 1 8.25 1.91a1 1 0 0 0 1.16 0A10.9 10.9 0 0 1 20.83 20a1 1 0 0 0 1.17-.79a1 1 0 0 0-.83-1.15" />
                         </svg>
-                        Apprentissage</a></li>
+                        Apprentissage</a>
+                </li>
                 <li>
                     <a href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
@@ -66,7 +77,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        <svg width="66" height="71" viewBox="0 0 66 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="66" height="64" viewBox="0 0 66 71" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M12.35 38.4932L0 25.3245L12.35 12.1557L24.7 25.3245L12.35 38.4932ZM23.4333 70.9085V54.0255C20.2139 53.7441 17.0208 53.3356 13.8542 52.7998C10.6875 52.2641 7.54722 51.5471 4.43333 50.6489L6.01667 43.8957C10.45 45.1901 14.8971 46.077 19.3578 46.5565C23.8186 47.036 28.3438 47.2746 32.9333 47.2723C37.5229 47.2701 42.0491 47.0303 46.512 46.5531C50.9749 46.0759 55.4209 45.1901 59.85 43.8957L61.4333 50.6489C58.3194 51.5494 55.1792 52.2674 52.0125 52.8032C48.8458 53.3389 45.6528 53.7464 42.4333 54.0255V70.9085H23.4333ZM12.35 29.0387L15.8333 25.3245L12.35 21.6102L8.86667 25.3245L12.35 29.0387ZM32.9333 20.2596C30.2944 20.2596 28.0514 19.2747 26.2042 17.305C24.3569 15.3354 23.4333 12.9436 23.4333 10.1298C23.4333 7.31596 24.3569 4.9242 26.2042 2.95452C28.0514 0.98484 30.2944 0 32.9333 0C35.5722 0 37.8153 0.98484 39.6625 2.95452C41.5097 4.9242 42.4333 7.31596 42.4333 10.1298C42.4333 12.9436 41.5097 15.3354 39.6625 17.305C37.8153 19.2747 35.5722 20.2596 32.9333 20.2596ZM32.9333 43.8957C31.1917 43.8957 29.7012 43.2351 28.462 41.9137C27.2228 40.5923 26.6021 39.0019 26.6 37.1425C26.5979 35.2832 27.2186 33.6939 28.462 32.3748C29.7054 31.0557 31.1959 30.3939 32.9333 30.3894C34.6708 30.3849 36.1623 31.0467 37.4078 32.3748C38.6534 33.7029 39.273 35.2922 39.2667 37.1425C39.2603 38.9929 38.6407 40.5833 37.4078 41.9137C36.1749 43.2441 34.6834 43.9047 32.9333 43.8957ZM32.9333 13.5064C33.8306 13.5064 34.5832 13.1822 35.1912 12.5339C35.7992 11.8856 36.1021 11.0842 36.1 10.1298C36.0979 9.17533 35.7939 8.37396 35.188 7.72565C34.5821 7.07734 33.8306 6.75319 32.9333 6.75319C32.0361 6.75319 31.2846 7.07734 30.6787 7.72565C30.0728 8.37396 29.7688 9.17533 29.7667 10.1298C29.7646 11.0842 30.0686 11.8867 30.6787 12.5373C31.2888 13.1879 32.0403 13.5109 32.9333 13.5064ZM48.925 37.1425L43.5417 27.0128L48.925 16.883H59.6917L65.075 27.0128L59.6917 37.1425H48.925ZM52.5667 30.3894H56.05L57.7917 27.0128L56.05 23.6362H52.5667L50.825 27.0128L52.5667 30.3894Z"
                                 fill="white" />
@@ -80,25 +91,32 @@
             <p>Meilleure école primaire</p>
             <img src="images/download2.png" alt="école primaire">
             <article>
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 512 512" stroke="black">
-                    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M402 168c-2.93 40.67-33.1 72-66 72s-63.12-31.32-66-72c-3-42.31 26.37-72 66-72s69 30.46 66 72"/>
-                    <path fill="none" stroke-miterlimit="10" stroke-width="32" d="M336 304c-65.17 0-127.84 32.37-143.54 95.41c-2.08 8.34 3.15 16.59 11.72 16.59h263.65c8.57 0 13.77-8.25 11.72-16.59C463.85 335.36 401.18 304 336 304Z"/>
-                    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M200 185.94c-2.34 32.48-26.72 58.06-53 58.06s-50.7-25.57-53-58.06C91.61 152.15 115.34 128 147 128s55.39 24.77 53 57.94"/>
-                    <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M206 306c-18.05-8.27-37.93-11.45-59-11.45c-52 0-102.1 25.85-114.65 76.2c-1.65 6.66 2.53 13.25 9.37 13.25H154"/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 512 512" stroke="var(--light)">
+                    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                        d="M402 168c-2.93 40.67-33.1 72-66 72s-63.12-31.32-66-72c-3-42.31 26.37-72 66-72s69 30.46 66 72" />
+                    <path fill="none" stroke-miterlimit="10" stroke-width="32"
+                        d="M336 304c-65.17 0-127.84 32.37-143.54 95.41c-2.08 8.34 3.15 16.59 11.72 16.59h263.65c8.57 0 13.77-8.25 11.72-16.59C463.85 335.36 401.18 304 336 304Z" />
+                    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                        d="M200 185.94c-2.34 32.48-26.72 58.06-53 58.06s-50.7-25.57-53-58.06C91.61 152.15 115.34 128 147 128s55.39 24.77 53 57.94" />
+                    <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"
+                        d="M206 306c-18.05-8.27-37.93-11.45-59-11.45c-52 0-102.1 25.85-114.65 76.2c-1.65 6.66 2.53 13.25 9.37 13.25H154" />
                 </svg>
                 <h3>Enseignants</h3>
                 <p>
-                    Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.
+                    Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis
+                    suscipit ultrices.
                 </p>
                 <a href="#">En savoir plus</a>
             </article>
             <article>
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="">
-                    <path d="M12 19.875q-.425 0-.825-.187t-.7-.538L2.825 10q-.225-.275-.337-.6t-.113-.675q0-.225.038-.462t.162-.438L4.45 4.1q.275-.5.738-.8T6.225 3h11.55q.575 0 1.038.3t.737.8l1.875 3.725q.125.2.163.437t.037.463q0 .35-.112.675t-.338.6l-7.65 9.15q-.3.35-.7.538t-.825.187M9.625 8h4.75l-1.5-3h-1.75zM11 16.675V10H5.45zm2 0L18.55 10H13zM16.6 8h2.65l-1.5-3H15.1zM4.75 8H7.4l1.5-3H6.25z"/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="var(--light)">
+                    <path
+                        d="M12 19.875q-.425 0-.825-.187t-.7-.538L2.825 10q-.225-.275-.337-.6t-.113-.675q0-.225.038-.462t.162-.438L4.45 4.1q.275-.5.738-.8T6.225 3h11.55q.575 0 1.038.3t.737.8l1.875 3.725q.125.2.163.437t.037.463q0 .35-.112.675t-.338.6l-7.65 9.15q-.3.35-.7.538t-.825.187M9.625 8h4.75l-1.5-3h-1.75zM11 16.675V10H5.45zm2 0L18.55 10H13zM16.6 8h2.65l-1.5-3H15.1zM4.75 8H7.4l1.5-3H6.25z" />
                 </svg>
                 <h3>Notre mission</h3>
                 <p>
-                    Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.
+                    Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis
+                    suscipit ultrices.
                 </p>
                 <a href="#">En savoir plus</a>
             </article>
